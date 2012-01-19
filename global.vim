@@ -64,4 +64,4 @@ set laststatus=2
 runtime macros/matchit.vim
 
 " Default colourscheme
-colorscheme jellybeans_jason
+colorscheme jellybeans
