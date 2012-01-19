@@ -21,6 +21,9 @@ set modelines=1                            " Check the first line of files for a
 set autoread                               " Automatically reload externally modified files when clean
 set autowriteall													 " Automatically write modified files
 set spelllang=en_au                        " Set default spelling language to English (Australia)
+set antialias
+
+set visualbell                             " Turns off beeping
 
 " Indentation
 set shiftwidth=2                           " Number of spaces to use in each autoindent step
@@ -39,7 +42,6 @@ set nowrap                                 " I don't always wrap lines...
 set linebreak                              " ...but when I do, I wrap whole words.
 set wildmenu                               " Make tab completion act more like bash
 set wildmode=list:longest                  " Tab complete to longest common string, like bash
-set switchbuf=useopen                      " Don't re-open already opened buffers
 
 " Moving around / editing
 set nostartofline                          " Avoid moving cursor to BOL when jumping around
@@ -53,16 +55,6 @@ set matchtime=2                            " (for only .2 seconds).
 set ignorecase                             " Ignore case by default when searching
 set smartcase                              " Switch to case sensitive mode if needle contains uppercase characters
 
-" Backups
-set backupdir=$HOME/.vim/.backup
-set directory=$HOME/.vim/.backup
-set backupskip=/tmp/*,/private/tmp/*
-
-" Persistent Undo
-set undodir=$HOME/.vim/.undo
-set undofile
-set undolevels=1000
-set undoreload=10000
 
 " Custom status line
 set statusline=%F%m%r%h%w\ [TYPE=%Y]\ \ \ \ \ \ [POS=%2l,%2v][%p%%]\ \ \ \ \ \ [LEN=%L]
