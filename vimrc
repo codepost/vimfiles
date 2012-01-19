@@ -4,11 +4,6 @@ source $HOME/.vim/functions.vim
 source $HOME/.vim/keybindings.vim
 source $HOME/.vim/plugin_config.vim
 
-" `:cd` to the project root if editing a directory
-if isdirectory(argv(0))
-  au VimEnter * :Rooter
-endif
-
 " Paste in non-GUI Vim with correct indentation when using Lion's Terminal or iTerm 1.0.0.20110908b+
 " <http://stackoverflow.com/questions/5585129/pasting-code-into-terminal-window-into-vim-on-mac-os-x/7053522#7053522>
 if &term =~ "xterm.*"
