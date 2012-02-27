@@ -1,13 +1,9 @@
-function! ToggleColors()
-  if &background == 'dark'
-    colorscheme bclear_jason
-  else
-    colorscheme jellybeans_jason
-  end
-endfunction
+colorscheme jellybeans
 map <Leader>C :call ToggleColors()<CR>
 
 set guioptions-=T " Hide the tool bar
+set transparency=5
+
 
 " MacVim
 if has("gui_macvim")
