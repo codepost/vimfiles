@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Bundle 'mehner/cvim'
 Bundle 'gmarik/vundle'
 " Bundle 'mileszs/ack.vim'
 Bundle 'bufexplorer.zip'
